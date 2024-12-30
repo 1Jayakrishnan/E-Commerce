@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends 'dash.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="card-body table-hover">
+  <h4 class="card-title">View Products</h4>
+  <p class="card-description">
+  </p>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Categaory Name</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Image</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in data %}
+        <tr>
+            <td>{{d.Category}}</td>
+            <td>{{d.ProductName}}</td>
+            <td>{{d.Price}}</td>
+            <td>{{d.ProductDescription}}</td>
+            <td>{{d.Quantity}}</td>
+            <td>
+                <img src="{{d.ProductImage.url}}">
+            </td>
+            <td>
+                <a href="{% url 'editpro' pro_id=d.id %}"><button class="btn btn-primary mr-2">EDIT</button></a>
+                <a href="{% url 'deletepro' pro_id=d.id %}"><button class="btn btn-danger mr-2">DELETE</button></a>
+            </td>
+        </tr>
+       {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>
+{% endblock %}

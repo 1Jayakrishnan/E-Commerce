@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% extends 'dash.html' %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Details</title>
+</head>
+<body>
+<div class="card-body">
+  <h4 class="card-title">Customer Details</h4>
+  <p class="card-description">
+  </p>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Customer Email</th>
+          <th>Place</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in customer %}
+        <tr>
+            <td>{{d.CustomerName}}</td>
+            <td>{{d.CustomerEmail}}</td>
+            <td>{{d.CustomerPlace}}</td>
+            <td>{{d.CustomerSubject}}</td>
+            <td>{{d.CustomerMessage}}</td>
+            <td>
+<!--             <a href="{% url 'editcat' c_id=d.id %}"><button class="btn btn-primary mr-2">EDIT</button></a>-->
+                <a href="{% url 'deleteCustomers' cus_id=d.id %}"><button class="btn btn-danger mr-2">DELETE</button></a>
+            </td>
+        </tr>
+       {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
+{% endblock %}

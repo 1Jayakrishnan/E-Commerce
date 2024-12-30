@@ -1,0 +1,62 @@
+
+////////// SIDEBAR ////////
+$sidebar-width-lg: 258px;
+$sidebar-width-mini: 185px;
+$sidebar-width-icon: 70px; 
+
+$sidebar-dark-bg:#181824;
+$sidebar-dark-menu-color: #8e94a9;
+$sidebar-dark-submenu-color: #888;
+$sidebar-dark-menu-active-bg: transparent;
+$sidebar-dark-menu-active-color: $success;
+$sidebar-dark-menu-hover-bg: darken($sidebar-dark-bg, 1%);
+$sidebar-dark-menu-hover-color: #fff;
+$sidebar-dark-submenu-hover-color: darken($sidebar-dark-submenu-color, 20%);
+$sidebar-dark-menu-icon-color: #8e94a9;
+$sidebar-dark-menu-arrow-color: rgba(255,255,255,.36);
+$sidebar-dark-menu-border-color: #f2edf3;
+$sidebar-dark-icon-bg: rgba(194,244,219,.12);
+$sidebar-dark-icon-color: #33c92d;
+$sidebar-dark-action-border: rgba(151,151,151,.27);
+
+
+$sidebar-light-bg: #fff;
+$sidebar-light-menu-color: #444343;
+$sidebar-light-menu-active-bg: #fff;
+$sidebar-light-menu-active-color: #444343;
+$sidebar-light-menu-hover-bg: lighten($sidebar-light-bg, 10%);
+$sidebar-light-menu-hover-color: #27367f;
+$sidebar-light-submenu-color: $sidebar-light-menu-color;
+$sidebar-light-submenu-hover-bg: initial;
+$sidebar-light-submenu-hover-color: darken($sidebar-light-submenu-color, 30%);
+$sidebar-light-icon-active-color: $success;
+$sidebar-light-icon-bg: rgba(0,0,0,.12);
+
+$sidebar-light-menu-icon-color: $sidebar-light-icon-active-color; 
+$sidebar-light-menu-arrow-color: #9e9da0;
+
+$sidebar-menu-font-size: 0.937rem;
+$sidebar-menu-padding-y: .625rem;
+$sidebar-menu-padding-x: 2.375rem;
+
+$sidebar-submenu-font-size: .8125rem;
+$sidebar-submenu-item-padding: .75rem 2rem .75rem 2rem;
+
+$sidebar-icon-font-size: 1.125rem;
+$sidebar-arrow-font-size: .625rem;
+
+$sidebar-profile-bg: transparent;
+$sidebar-profile-padding: .75rem 1.625rem .75rem 1.188rem;
+
+$sidebar-mini-menu-padding: .8125rem 1rem .8125rem 1rem;
+
+$sidebar-icon-only-menu-padding: .5rem 1.625rem .5rem 1.188rem;
+$sidebar-icon-only-submenu-padding: 0 0 0 1.5rem;
+
+$rtl-sidebar-submenu-padding: 0 1.5rem 0 0;
+
+$icon-only-collapse-width: 190px;
+$icon-only-menu-bg-dark: $sidebar-dark-menu-hover-bg;
+$icon-only-menu-bg-light: $sidebar-light-menu-hover-bg;
+
+///////// SIDEBAR ////////
